@@ -28,7 +28,7 @@ function FilaPage() {
     borderRadius:'8px',
   };
   const sair = () => {
-    ApiRoot.delete(`/costumer/${usuario.id}`).then(()=>{
+    ApiRoot.delete(`/costumers/${usuario.id}`).then(()=>{
       localStorage.setItem('user', null)
       navigate(`/${empresa}/entrar`)
     })
