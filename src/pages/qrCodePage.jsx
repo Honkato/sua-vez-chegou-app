@@ -56,7 +56,7 @@ function QRCodePage() {
     },[])
     
     const GenerateQRCode = (url) => {
-		QRCode.toDataURL(`http://localhost:5173/${url}/entrar`, {
+		QRCode.toDataURL(`https://sua-vez-chegou-app.vercel.app/${url}/entrar`, {
 			width: 400,
 			margin: 2,
 			color: {
